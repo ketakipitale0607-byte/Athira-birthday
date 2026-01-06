@@ -1,0 +1,131 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* PAGE 1 – ORIGINAL BACKGROUND (NO BLUR) */
+.page1 {
+  position: relative;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* CONTENT */
+.center {
+  padding: 20px;
+}
+
+/* TEXT */
+.center h1 {
+  font-size: 2.6em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.date {
+  font-size: 1.2em;
+  color: #ffd6e7;
+  margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.btn,
+.music-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ffb6c1;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.music-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+}
+
+/* PAGE 2 & 3 */
+.page2 {
+  background: #fff0f6;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+/* TITLES */
+.title {
+  font-size: 2.1em;
+  margin-bottom: 25px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* MESSAGE */
+.message {
+  max-width: 720px;
+  margin: 30px auto;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* VIDEO */
+.videos {
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+
+.videos video {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 12px 25px rgba(255, 182, 193, 0.35);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .center h1 {
+    font-size: 2.1em;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+}
